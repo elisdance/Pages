@@ -1,0 +1,20 @@
+.books {
+  &__poster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 155px;
+  }
+}
+
+.book__size {
+  width: 285px;
+  height: 380px;
+}

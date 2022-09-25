@@ -1,0 +1,34 @@
+.paragraphs {
+  &__photo {
+    margin-bottom: 100px;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 1;
+    max-width: 525px;
+    max-height: 620px;
+  }
+
+  &__details {
+    margin-top: 50px;
+  }
+
+  &__detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.det {
+  background-color: $light-blue-color;
+  padding-top: 30px;
+  padding-left: 30px;
+  justify-content: center;
+  width: 303px;
+  height: 255px;
+}

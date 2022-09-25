@@ -1,0 +1,39 @@
+.header {
+  font-family: $secondary-font-family;
+
+  &__menu {
+    background-color: $blue-color;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+
+  }
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: $blue-color;
+  padding-top: 60px;
+
+  &__nav {
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    gap: 100px;
+    padding-bottom: 70px;
+  }
+
+  &__detail {
+    display: flex;
+    font-size: 19px;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}

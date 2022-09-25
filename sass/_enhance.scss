@@ -1,0 +1,36 @@
+.enhance {
+  &__cards {
+    align-items: center;
+  }
+
+  &__start {
+    padding-top: 50px;
+    display: block;
+    text-align: center;
+  }
+}
+
+.start {
+  &__size {
+    font-size: 19px;
+    color: $blue-color;
+  }
+}
+
+.cards {
+  &__group {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__card {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 635px;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+  }
+}

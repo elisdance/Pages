@@ -1,0 +1,57 @@
+.swiper {
+  height: 630px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-slider {
+  &__card {
+    background-color: white;
+    max-width: 420px;
+    border-radius: 10px;
+  }
+
+  &__text {
+    color: $blue-color;
+    padding-left: 25px;
+    height: 222px;
+  }
+}
+
+.button-prev {
+  background: url(../images/prev.svg);
+  padding: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.button-prev::after {
+  display: none;
+}
+
+.button-next {
+  background: url(../images/next.svg);
+  padding: 25px 25px;
+  margin-left: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.button-next::after {
+  display: none;
+}
+
+.read-more {
+  display: flex;
+  padding-right: 25px;
+  font-size: 19px;
+  justify-content: space-between;
+  align-items: center;
+}

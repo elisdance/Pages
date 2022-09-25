@@ -1,0 +1,35 @@
+@mixin fontz ($s, $c) {
+  font-size: $s;
+  color: $c;
+}
+
+@mixin square ($w, $h, $b, $c) {
+  width: $w;
+  height: $h;
+  background-color: $b;
+  border: $c;
+}
+
+
+@mixin button ($w, $b) {
+  width: $w;
+  background-color: $b;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

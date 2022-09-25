@@ -1,0 +1,251 @@
+@import 'mixins.scss';
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: $secondary-font-family;
+}
+
+.icons__badge {
+  background-color: white;
+  color: black;
+  width: 45px;
+  height: 45px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.social-media__badge {
+  color: white;
+  border: 1px solid $yellow-color;
+  width: 45px;
+  height: 45px;
+  font-size: 19px;
+  align-items: center;
+  text-align: center;
+}
+
+.social-media__badge:hover {
+  background-color: $yellow-color;
+  transition: 0.3s all ease-in;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+
+}
+
+.app {
+  margin-top: 12px;
+}
+
+.icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart {
+  color: black;
+}
+
+.cart:hover {
+  color: $yellow-color;
+  transition: all 0.3s ease-in;
+}
+
+.order {
+  height: 66px;
+  color: $blue-color;
+  font-family: 'Cardo';
+  font-size: 19px;
+
+  &--yellow {
+    @include button (222px, $yellow-color);
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  &--white {
+    @include button (206px, #fff);
+    border: 1px solid $yellow-color;
+    color: $yellow-color;
+  }
+
+  &--blue {
+    @include button (222px, $blue-color);
+    border: 1px solid $yellow-color;
+    color: #fff;
+    margin-top: 15px;
+  }
+}
+
+.order--yellow:hover {
+  background-color: $blue-color;
+  color: $yellow-color;
+  transition: all 0.3s ease-out;
+  border: 1px solid $yellow-color;
+}
+
+.order--white:hover {
+  background-color: $yellow-color;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  border: 1px solid $yellow-color;
+}
+
+.order--blue:hover {
+  background-color: $yellow-color;
+  transition: all 0.3s ease-out;
+  color: $blue-color;
+  border: 1px solid $yellow-color;
+}
+
+.line::before {
+  content: ' ';
+  display: inline-block;
+  background-color: $yellow-color;
+  vertical-align: middle;
+  width: 35px;
+  height: 2px;
+}
+
+.line--lg::before {
+  content: ' ';
+  display: inline-block;
+  background-color: $yellow-color;
+  vertical-align: middle;
+  width: 50px;
+  height: 3px;
+}
+
+.line--blue::before {
+  content: ' ';
+  display: inline-block;
+  background-color: $blue-color;
+  vertical-align: middle;
+  width: 35px;
+  height: 2px;
+}
+
+.detail__name::before {
+  content: '';
+  background-color: $yellow-color;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.name {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.square {
+  @include square (515px, 590px, none, 10px solid $yellow-color);
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.line--vertical {
+  content: ' ';
+  display: inline-block;
+  background-color: $yellow-color;
+  vertical-align: middle;
+  width: 98px;
+  height: 1px;
+  transform: rotate(90deg);
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: $yellow-color;
+  position: relative;
+  border-radius: 50%;
+
+}
+
+.n {
+  position: absolute;
+  z-index: 1;
+  padding-left: 13px;
+  padding-top: 12px;
+}
+
+.button-large {
+  @include button (429px, $yellow-color);
+  border: none;
+  height: 76px;
+  margin-bottom: 25px;
+}
+
+.button-large:hover {
+  background-color: $blue-color;
+  color: $yellow-color;
+  transition: all 0.3s ease-in;
+  justify-content: center;
+}
+
+.subscribe {
+  background-color: $blue-color;
+  color: #fff;
+  font-family: $secondary-font-family;
+  border: none;
+  font-size: 19px;
+  width: 300px;
+  height: 68px;
+}
+
+.subscribe:hover {
+  color: $yellow-color;
+  transition: 0.3s all ease-in;
+}
+
+
+.input {
+  border: none;
+  width: 60%;
+
+  @include placeholder {
+    color: #B4C7E7;
+    font-family: $secondary-font-family;
+    font-size: 18px;
+    transform: translateX(10px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.dots {
+  color: $yellow-color;
+}
+
+.padding {
+  &--two {
+    padding-right: 25px;
+  }
+
+  &--three {
+    padding-right: 7px;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  font-size: 17px;
+
+  &--grey {
+    color: #B4C7E7;
+  }
+}

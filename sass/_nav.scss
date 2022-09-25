@@ -1,0 +1,43 @@
+.menu {
+  margin-left: 8rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 50px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: flex;
+    font-size: 17px;
+  }
+}
+
+.menu__link:hover {
+  color: $yellow-color;
+  transition: all 0.3s ease-in;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}

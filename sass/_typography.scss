@@ -1,0 +1,68 @@
+@import 'mixins.scss';
+
+.text {
+  &--small {
+    font-size: 21px;
+  }
+}
+
+.title {
+  &--h1 {
+    font-size: 64px;
+  }
+
+  &--h2 {
+    font-size: 42px;
+    margin: 0
+  }
+}
+
+.info {
+  @include fontz (18px, #B4C7E7);
+  font-family: 'Inter';
+
+
+}
+
+.demo {
+  border-bottom: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  font-size: 19px;
+}
+
+.detail__info {
+  @include fontz (17px, #B4C7E7);
+  margin-left: 15px;
+}
+
+.book {
+  &__name {
+    font-size: 32px;
+  }
+
+  &__price {
+    @include fontz (21px, $yellow-color)
+  }
+}
+
+.number {
+  font-size: 54px;
+  margin: 0;
+}
+
+.rate {
+  font-size: 19px;
+}
+
+.read-more__link {
+  color: $blue-color;
+  text-decoration: none;
+  border-bottom: 1px solid $blue-color;
+}
+
+.form__text {
+  font-size: 19px;
+  text-align: center;
+}

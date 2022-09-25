@@ -1,0 +1,37 @@
+.words {
+  &__reviewers {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__reviewer {
+    background-color: $blue-color;
+    color: white;
+    align-items: center;
+    width: 381px;
+    height: 272px;
+    padding-left: 40px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+
+  }
+}
+
+.person {
+  height: 100%;
+  padding-top: 10px;
+}
+
+.rating {
+  margin-top: -20px;
+}
